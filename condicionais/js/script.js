@@ -91,3 +91,55 @@ do{
     console.log(`${m}`);
     m = m + 2;
 }while(m <= 21);
+
+
+// Loop (laço) for
+let z = 5;
+
+for(z; z > 2; z--){
+    console.log(z);
+}
+
+for(i = 0; i <= 5; i++){
+    console.log(i);
+}
+
+// break
+let contador = 0;
+
+while(contador < 10){
+    console.log(contador);
+
+// Interromper o loop se o contador for igual a 5
+if(contador === 5){
+    break;
+}
+    contador++;
+}
+
+// continue
+for(f = 1; f <= 7; f++){
+
+// Pula impressão do numero 5
+    if(f === 5){
+        continue;
+    }
+
+    console.log(f);
+}
+
+// switch
+let idade = 18;
+
+switch(idade){
+    case 18: 
+    console.log("Usuário maior de idade");
+    break;
+
+    case 17:
+    console.log("Usuário é menor de idade");
+    break; 
+
+    default:        
+    console.log("Idade inválida");        
+}
